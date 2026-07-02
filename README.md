@@ -1,13 +1,14 @@
 # Sales Outreach Agent 🤖
 
-A Selenium-based automation tool that searches YouTube for content creators and saves them to a CSV file for cold outreach campaigns.
+A Selenium-based YouTube creator scraper that automatically searches multiple niches, finds content creators and exports them to CSV for cold outreach campaigns.
 
 ## What it does
 
-- Automatically opens YouTube using Selenium
-- Searches for content creators by niche
+- Searches multiple niches on YouTube automatically
 - Extracts channel names and About page URLs
-- Saves results to a CSV file for outreach
+- Removes duplicate creators across niches
+- Saves everything to a CSV file with niche labels
+- Ready for cold outreach in minutes!
 
 ## Tools and Technologies
 
@@ -25,11 +26,19 @@ A Selenium-based automation tool that searches YouTube for content creators and 
 
 ## How to use
 
-1. Change the search term in `outreach.py` to your target niche
+1. Edit the `NICHES` list in `outreach.py` to target your niches
 2. Run the script
 3. Open `creators.csv`
-4. Visit each About page URL manually to find emails
+4. Visit each About page URL to find emails
 5. Send your outreach message!
+
+## Current niches targeted
+
+- Productivity
+- Personal Finance
+- Entrepreneurship
+- Self Improvement
+- Tech Tutorials
 
 ## Built by
 
